@@ -1,24 +1,34 @@
-# Flores amarillas 🌼
+# Un universo de flores amarillas
 
-Un jardín animado para regalar un poquito de sol. HTML, CSS y JavaScript en un solo `index.html`, sin dependencias ni archivos externos.
+Experiencia móvil en un único `index.html`, con HTML, CSS y JavaScript sin dependencias externas.
 
-## Verlo
+## Recorrido
 
-Descarga `index.html` y ábrelo en un navegador moderno. Pulsa **Abrir mi regalo**.
+1. Toca la chispa: el universo se expande y aparece una flor amarilla.
+2. Recoge siete estrellas en una órbita con perspectiva. Sin cronómetro ni penalizaciones.
+3. Se revela un ramo animado de 14 flores: girasoles, margaritas, tulipanes, rosas, narcisos y cempasúchil.
 
-- Siete flores ilustradas con SVG, crecimiento y movimiento suave.
-- Luciérnagas y partículas al tocar el jardín.
-- Carta, música ambiental original opcional y dedicatoria por nombre.
-- Diseño adaptable, controles por teclado y respeto por la preferencia de movimiento reducido.
+La profundidad usa proyección matemática en Canvas y transformaciones CSS/SVG; no requiere WebGL. El sonido de las estrellas es opcional. Hay botones para saltar las etapas, repetir y navegación por teclado. Respeta la preferencia de movimiento reducido y pausa al ocultar la pestaña.
 
-## Publicarlo con GitHub Pages
+## Enlaces personalizados
 
-En el repositorio, abre **Settings → Pages**. En **Build and deployment**, selecciona **Deploy from a branch**, rama **main** y carpeta **/ (root)**. Guarda y espera a que GitHub muestre el enlace de la página.
+Al final del recorrido, abre el símbolo discreto **✧**, escribe nombres separados por comas y pulsa **Copiar enlace**. También hay un botón para cargar los tres nombres.
 
-Después de publicarlo, el botón **Dedicar** copia un enlace con el nombre de la persona. El nombre queda visible en la URL (`?para=Nombre`). Cuando se abre como archivo local, se indica que es necesario publicarlo para compartir un enlace.
+- Un nombre: encabezado personalizado sin carta.
+- Varios nombres: encabezado en plural.
+- Exactamente **Yuliana, Naomi y Esthefanía**: aparece la carta especial de amistad. El orden, las mayúsculas y los acentos no afectan la detección.
+- Otros grupos: flores y nombres, sin la carta especial.
 
-## Personalizar
+Los enlaces usan `?para=Nombre` o nombres separados por comas. Los enlaces anteriores de una persona siguen funcionando. El nombre es texto visible en la URL; el generador es discreto, no una función protegida por contraseña. La personalización no utiliza almacenamiento ni servicios externos.
 
-En `index.html`, cambia la dedicatoria dentro de `<dialog id="letter">`, los textos de la sección `.hero` o los colores de `:root`. El CSS está en `<style>` y JavaScript en `<script>`.
+## Publicación
 
-La música solo se reproduce al activarla; no se descarga ni utiliza ninguna canción de terceros.
+En GitHub: **Settings → Pages → Deploy from a branch → main → / (root) → Save**. Si ya está configurado, GitHub Pages publicará los cambios de `main` automáticamente. Abre la página publicada para copiar enlaces compartibles; los archivos locales no se pueden compartir por URL.
+
+## Edición
+
+Todo está en `index.html`. La carta está en `#dedication`, las reglas de nombres en `parseNames` e `isSpecial`, y las flores en `arrangements` y `drawFlower`.
+
+## Verificación
+
+Se comprobó la sintaxis y la lógica de las transiciones, siete capturas únicas, reinicio, saltos, 14 flores, enlaces y reglas de dedicatorias. La revisión visual en un navegador móvil real sigue pendiente.
