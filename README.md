@@ -1,40 +1,37 @@
 # Galaxia de flores amarillas 🌻
 
-Experiencia para teléfono en un solo `index.html`, con HTML, CSS y JavaScript.
+Un regalo interactivo para teléfono, en un único `index.html` con HTML, CSS y JavaScript.
 
 ## Recorrido
 
-1. Toca la luz para entrar a una galaxia con anillo dorado, 1,800 partículas y girasoles en órbita.
-2. Juega un pequeño nivel de plataformas en pixel art, con una niñita de cabello castaño y vestido turquesa: camina, salta y recoge siete flores. El paisaje usa tonos dorados, tierra, verdes y agua turquesa, con árboles otoñales y hojas animadas.
-3. Al terminar, se revela un ramo de 14 flores de seis tipos y la dedicatoria correspondiente.
+1. Galaxia dorada con brazos espirales, profundidad, 2,400 partículas y flores en órbita.
+2. Juego de plataformas en pixel art con una niñita, 12 flores y tres zonas: sendero, río y jardín. El recorrido mide 4,100 unidades, frente a las 2,200 anteriores.
+3. Ramo animado final con nombres y, si lo escribiste, tu mensaje personalizado.
 
-Controles móviles: izquierda, derecha y SALTAR. En computadora: flechas o A/D, y espacio, arriba o W para saltar. El nivel no tiene enemigos ni cronómetro. Incluye saltar etapas y repetir.
+La niña tiene aceleración y frenado suaves, brazos y piernas coordinados, cabello en movimiento y respuesta al aterrizar. Controles: botones táctiles; flechas/A/D para caminar y espacio/arriba/W para saltar. No hay enemigos ni cronómetro. Puedes saltar etapas o repetir el recorrido.
 
-## Añadir la canción
+## Tu mensaje
 
-Sube tu archivo con el nombre exacto **`flores_amarillas.mp3`** a la raíz del repositorio, junto a `index.html`:
+Al final abre **✧**. Introduce los nombres separados por comas y un mensaje opcional de hasta 800 caracteres; copia el enlace.
 
-- `index.html`
-- `flores_amarillas.mp3`
-- `README.md`
+- Una persona: título en singular.
+- Varias personas: título en plural.
+- Cualquier nombre o grupo recibe exactamente el mensaje que escribas.
+- Si el campo queda vacío, no aparece ninguna carta.
+- Ya no hay mensajes ni grupos preestablecidos.
 
-Usa **Add file → Upload files**, selecciona el MP3 y guarda los cambios. La canción se intenta reproducir desde la entrada a la página. Si el navegador bloquea el autoplay con sonido, se reintenta con el primer toque. Se repite en bucle y se pausa con el botón musical superior. Si el navegador impide el primer intento, toca el botón musical. Si falta el MP3, el recorrido sigue funcionando sin sonido. La música se pausa al ocultar la pestaña.
+Los enlaces usan `?para=...&mensaje=...`. Admiten acentos, emojis y saltos de línea. El mensaje se muestra como texto, nunca como HTML. Los nombres y el mensaje son visibles en la URL; el generador discreto no está protegido por contraseña. Los enlaces antiguos con nombres siguen funcionando, pero ya no generan cartas automáticas.
 
-## Dedicatorias
+## Canción
 
-Abre **✧** al final, escribe nombres separados por comas y pulsa **Copiar enlace**. El campo empieza vacío, sin ejemplos ni botones con nombres.
+La página usa **`Flores_amarillas.mp3`**, con F mayúscula, junto a `index.html`, como el archivo subido al repositorio. El nombre distingue mayúsculas y minúsculas.
 
-- Un nombre: flores a su nombre, sin carta especial.
-- Varios nombres: título en plural.
-- Exactamente Yuliana, Naomi y Esthefanía: carta de amistad especial. Acepta otro orden, mayúsculas y nombres sin acentos.
-- Otros grupos: nombres y flores, sin esa carta.
+La música intenta comenzar al abrir la página. Si el navegador bloquea el inicio automático con sonido, se reintenta con el primer toque. El botón superior permite pausarla y reanudarla. Se pausa al ocultar la pestaña. Si falta el archivo o no carga, el recorrido funciona sin sonido.
 
-El generador está discreto, no protegido por contraseña. Los nombres son visibles en la URL. Los enlaces anteriores con `?para=Nombre` siguen funcionando.
+## GitHub Pages
 
-## Publicación
-
-GitHub **Settings → Pages → Deploy from a branch → main → / (root) → Save**. Si Pages ya está activo, publicará los cambios automáticamente. Genera los enlaces desde la página publicada, no desde un archivo local.
+**Settings → Pages → Deploy from a branch → main → / (root) → Save**. Si ya está configurado, los cambios en `main` se publican automáticamente. Genera los enlaces desde la página publicada.
 
 ## Verificación
 
-Pruebas ejecutadas: sintaxis, renderizado por llamadas Canvas, simulación completa del recorrido usando movimiento/saltos y colisiones reales, recogida de siete flores, revelación del ramo, reinicio, salto de etapas y reglas de enlaces/dedicatorias. La reproducción del MP3 requiere que se suba el archivo; la revisión visual en un teléfono real sigue pendiente.
+Comprobadas la sintaxis, las llamadas de dibujo, el recorrido físico completo con las 12 flores, las plataformas, el final, el reinicio y los saltos. Comprobados los mensajes con emojis, saltos de línea, texto HTML literal y campos vacíos. La revisión visual y la reproducción del MP3 en un teléfono real siguen pendientes.
