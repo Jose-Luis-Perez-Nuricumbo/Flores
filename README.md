@@ -4,11 +4,13 @@ Un regalo interactivo para teléfono, en un único `index.html` con HTML, CSS y 
 
 ## Recorrido
 
-1. Galaxia dorada con brazos espirales, profundidad, 2,400 partículas y flores en órbita.
+1. Galaxia dorada con brazos espirales, profundidad, 2,400 partículas y 64 flores en órbita. Durante la entrada hay un túnel de estelas de estrellas y 28 flores que avanzan hacia la cámara; se omite ese efecto con movimiento reducido.
 2. Juego de plataformas en pixel art con una niñita, 15 flores y tres zonas: sendero, río y jardín. El recorrido mide 4,800 unidades, frente a las 2,200 anteriores.
-3. Ramo animado final de 24 flores, con nombres y, si lo escribiste, tu mensaje personalizado.
+3. Ramo animado final de 40 flores, con nombres y, si lo escribiste, tu mensaje personalizado.
 
-La introducción dura unos 12 segundos (4 con movimiento reducido) y el ramo aparece progresivamente durante unos 6 segundos. El último tramo añade una escalera de tres alturas con suelo seguro debajo.
+La introducción dura unos 15 segundos (4 con movimiento reducido) y el ramo aparece progresivamente durante unos 6 segundos. Puedes pulsar SALTAR otra vez en el aire para realizar un doble salto. Hay 9 luciérnagas opcionales: cada tres activan un imán que amplía el alcance de recogida de flores durante 6 segundos. No son necesarias para terminar. Los escenarios incluyen casitas, una cascada, un puente y un prado.
+
+El último tramo añade una escalera de tres alturas con suelo seguro debajo.
 
 La niña mira hacia la dirección de avance. El pie apoyado se desplaza hacia atrás respecto al cuerpo y el otro avanza levantado. Tiene aceleración y frenado suaves, brazos y piernas coordinados, cabello en movimiento y respuesta al aterrizar. Controles: botones táctiles; flechas/A/D para caminar y espacio/arriba/W para saltar. No hay enemigos ni cronómetro. Puedes saltar etapas o repetir el recorrido.
 
