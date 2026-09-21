@@ -1,34 +1,40 @@
-# Un universo de flores amarillas
+# Galaxia de flores amarillas 🌻
 
-Experiencia móvil en un único `index.html`, con HTML, CSS y JavaScript sin dependencias externas.
+Experiencia para teléfono en un solo `index.html`, con HTML, CSS y JavaScript.
 
 ## Recorrido
 
-1. Toca la chispa: el universo se expande y aparece una flor amarilla.
-2. Recoge siete estrellas en una órbita con perspectiva. Sin cronómetro ni penalizaciones.
-3. Se revela un ramo animado de 14 flores: girasoles, margaritas, tulipanes, rosas, narcisos y cempasúchil.
+1. Toca la luz para entrar a una galaxia con anillo dorado, 1,800 partículas y girasoles en órbita.
+2. Juega un pequeño nivel de plataformas en pixel art, estilo Mario: camina, salta y recoge siete flores.
+3. Al terminar, se revela un ramo de 14 flores de seis tipos y la dedicatoria correspondiente.
 
-La profundidad usa proyección matemática en Canvas y transformaciones CSS/SVG; no requiere WebGL. El sonido de las estrellas es opcional. Hay botones para saltar las etapas, repetir y navegación por teclado. Respeta la preferencia de movimiento reducido y pausa al ocultar la pestaña.
+Controles móviles: izquierda, derecha y SALTAR. En computadora: flechas o A/D, y espacio, arriba o W para saltar. El nivel no tiene enemigos ni cronómetro. Incluye saltar etapas y repetir.
 
-## Enlaces personalizados
+## Añadir la canción
 
-Al final del recorrido, abre el símbolo discreto **✧**, escribe nombres separados por comas y pulsa **Copiar enlace**. También hay un botón para cargar los tres nombres.
+Sube tu archivo con el nombre exacto **`flores_amarillas.mp3`** a la raíz del repositorio, junto a `index.html`:
 
-- Un nombre: encabezado personalizado sin carta.
-- Varios nombres: encabezado en plural.
-- Exactamente **Yuliana, Naomi y Esthefanía**: aparece la carta especial de amistad. El orden, las mayúsculas y los acentos no afectan la detección.
-- Otros grupos: flores y nombres, sin la carta especial.
+- `index.html`
+- `flores_amarillas.mp3`
+- `README.md`
 
-Los enlaces usan `?para=Nombre` o nombres separados por comas. Los enlaces anteriores de una persona siguen funcionando. El nombre es texto visible en la URL; el generador es discreto, no una función protegida por contraseña. La personalización no utiliza almacenamiento ni servicios externos.
+Usa **Add file → Upload files**, selecciona el MP3 y guarda los cambios. La canción se intenta reproducir al tocar la luz inicial, se repite en bucle y se pausa con el botón musical superior. Si el navegador impide el primer intento, toca el botón musical. Si falta el MP3, el recorrido sigue funcionando sin sonido. La música se pausa al ocultar la pestaña.
+
+## Dedicatorias
+
+Abre **✧** al final, escribe nombres separados por comas y pulsa **Copiar enlace**.
+
+- Un nombre: flores a su nombre, sin carta especial.
+- Varios nombres: título en plural.
+- Exactamente Yuliana, Naomi y Esthefanía: carta de amistad especial. Acepta otro orden, mayúsculas y nombres sin acentos.
+- Otros grupos: nombres y flores, sin esa carta.
+
+El generador está discreto, no protegido por contraseña. Los nombres son visibles en la URL. Los enlaces anteriores con `?para=Nombre` siguen funcionando.
 
 ## Publicación
 
-En GitHub: **Settings → Pages → Deploy from a branch → main → / (root) → Save**. Si ya está configurado, GitHub Pages publicará los cambios de `main` automáticamente. Abre la página publicada para copiar enlaces compartibles; los archivos locales no se pueden compartir por URL.
-
-## Edición
-
-Todo está en `index.html`. La carta está en `#dedication`, las reglas de nombres en `parseNames` e `isSpecial`, y las flores en `arrangements` y `drawFlower`.
+GitHub **Settings → Pages → Deploy from a branch → main → / (root) → Save**. Si Pages ya está activo, publicará los cambios automáticamente. Genera los enlaces desde la página publicada, no desde un archivo local.
 
 ## Verificación
 
-Se comprobó la sintaxis y la lógica de las transiciones, siete capturas únicas, reinicio, saltos, 14 flores, enlaces y reglas de dedicatorias. La revisión visual en un navegador móvil real sigue pendiente.
+Pruebas ejecutadas: sintaxis, renderizado por llamadas Canvas, simulación completa del recorrido usando movimiento/saltos y colisiones reales, recogida de siete flores, revelación del ramo, reinicio, salto de etapas y reglas de enlaces/dedicatorias. La reproducción del MP3 requiere que se suba el archivo; la revisión visual en un teléfono real sigue pendiente.
