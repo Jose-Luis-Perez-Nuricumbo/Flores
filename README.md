@@ -5,10 +5,12 @@ Un regalo interactivo para teléfono, en un único `index.html` con HTML, CSS y 
 ## Recorrido
 
 1. Galaxia dorada con brazos espirales, profundidad, 2,400 partículas y flores en órbita.
-2. Juego de plataformas en pixel art con una niñita, 12 flores y tres zonas: sendero, río y jardín. El recorrido mide 4,100 unidades, frente a las 2,200 anteriores.
-3. Ramo animado final con nombres y, si lo escribiste, tu mensaje personalizado.
+2. Juego de plataformas en pixel art con una niñita, 15 flores y tres zonas: sendero, río y jardín. El recorrido mide 4,800 unidades, frente a las 2,200 anteriores.
+3. Ramo animado final de 24 flores, con nombres y, si lo escribiste, tu mensaje personalizado.
 
-La niña tiene aceleración y frenado suaves, brazos y piernas coordinados, cabello en movimiento y respuesta al aterrizar. Controles: botones táctiles; flechas/A/D para caminar y espacio/arriba/W para saltar. No hay enemigos ni cronómetro. Puedes saltar etapas o repetir el recorrido.
+La introducción dura unos 12 segundos (4 con movimiento reducido) y el ramo aparece progresivamente durante unos 6 segundos. El último tramo añade una escalera de tres alturas con suelo seguro debajo.
+
+La niña mira hacia la dirección de avance. El pie apoyado se desplaza hacia atrás respecto al cuerpo y el otro avanza levantado. Tiene aceleración y frenado suaves, brazos y piernas coordinados, cabello en movimiento y respuesta al aterrizar. Controles: botones táctiles; flechas/A/D para caminar y espacio/arriba/W para saltar. No hay enemigos ni cronómetro. Puedes saltar etapas o repetir el recorrido.
 
 ## Tu mensaje
 
@@ -34,4 +36,4 @@ La música intenta comenzar al abrir la página. Si el navegador bloquea el inic
 
 ## Verificación
 
-Comprobadas la sintaxis, las llamadas de dibujo, el recorrido físico completo con las 12 flores, las plataformas, el final, el reinicio y los saltos. Comprobados los mensajes con emojis, saltos de línea, texto HTML literal y campos vacíos. La revisión visual y la reproducción del MP3 en un teléfono real siguen pendientes.
+Comprobadas la sintaxis, las llamadas de dibujo, el recorrido físico completo con las 15 flores, las plataformas, el final, el reinicio y los saltos. Comprobados los mensajes con emojis, saltos de línea, texto HTML literal y campos vacíos. La revisión visual y la reproducción del MP3 en un teléfono real siguen pendientes.
