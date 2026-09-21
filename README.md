@@ -24,7 +24,7 @@ Al final abre **✧**. Introduce los nombres separados por comas y un mensaje op
 - Si el campo queda vacío, no aparece ninguna carta.
 - Ya no hay mensajes ni grupos preestablecidos.
 
-Los enlaces usan `?para=...&mensaje=...`. Admiten acentos, emojis y saltos de línea. El mensaje se muestra como texto, nunca como HTML. Los nombres y el mensaje son visibles en la URL; el generador discreto no está protegido por contraseña. Los enlaces antiguos con nombres siguen funcionando, pero ya no generan cartas automáticas.
+Los enlaces nuevos eligen automáticamente la opción más corta: parámetros tradicionales o un fragmento compactado `#d=...`, con compresión cuando el navegador la soporta. Los enlaces anteriores `?para=...&mensaje=...` siguen funcionando. Los fragmentos comprimidos requieren un navegador con DecompressionStream; si no lo soporta, la página muestra una indicación. Admiten acentos, emojis y saltos de línea. El mensaje se muestra como texto, nunca como HTML. Los nombres y el mensaje siguen incluidos en la URL (compactados no significa cifrados); el generador discreto no está protegido por contraseña. Los enlaces antiguos con nombres siguen funcionando, pero ya no generan cartas automáticas.
 
 ## Canción
 
@@ -43,3 +43,5 @@ Comprobadas la sintaxis, las llamadas de dibujo, el recorrido físico completo c
 ## Movimiento y controles adicionales
 
 Las flores de la galaxia se dibujan con pétalos curvos animados, rotación individual, inclinación y desplazamiento en profundidad; no son imágenes estáticas. El juego incluye polvo de pasos y aterrizaje, banderas de recuperación y pausa/reanudación. Se probaron además las colisiones, la conservación de flores al reaparecer y los controles de pausa. La inspección visual en un dispositivo real sigue pendiente.
+
+La longitud depende del mensaje: esta función no crea identificadores cortos alojados en un servidor. Se verificaron compresión/descompresión con nombres, acentos, emojis, saltos de línea, mensajes vacíos y enlaces dañados; también el formato alternativo sin compresión.
