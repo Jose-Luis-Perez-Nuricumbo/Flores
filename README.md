@@ -12,7 +12,7 @@ La introducción dura unos 15 segundos (4 con movimiento reducido) y el ramo apa
 
 El último tramo añade una escalera de tres alturas con suelo seguro debajo.
 
-La niña mira hacia la dirección de avance. El pie apoyado se desplaza hacia atrás respecto al cuerpo y el otro avanza levantado. Tiene aceleración y frenado suaves, brazos y piernas coordinados, cabello en movimiento y respuesta al aterrizar. Controles: botones táctiles; flechas/A/D para caminar y espacio/arriba/W para saltar. No hay enemigos ni cronómetro. Puedes saltar etapas o repetir el recorrido.
+La niña mira hacia la dirección de avance. El pie apoyado se desplaza hacia atrás respecto al cuerpo y el otro avanza levantado. Tiene aceleración y frenado suaves, brazos y piernas coordinados, cabello en movimiento y respuesta al aterrizar. Controles: botones táctiles; flechas/A/D para caminar y espacio/arriba/W para saltar. Hay cinco caracoles móviles: puedes saltarlos o caer encima para que descansen siete segundos. Una colisión lateral te devuelve al último punto de recuperación (inicio, 1,600 o 3,200), sin perder flores ni luciérnagas y con dos segundos de protección. No hay cronómetro. Puedes saltar etapas o repetir el recorrido.
 
 ## Tu mensaje
 
@@ -39,3 +39,7 @@ La música intenta comenzar al abrir la página. Si el navegador bloquea el inic
 ## Verificación
 
 Comprobadas la sintaxis, las llamadas de dibujo, el recorrido físico completo con las 15 flores, las plataformas, el final, el reinicio y los saltos. Comprobados los mensajes con emojis, saltos de línea, texto HTML literal y campos vacíos. La revisión visual y la reproducción del MP3 en un teléfono real siguen pendientes.
+
+## Movimiento y controles adicionales
+
+Las flores de la galaxia se dibujan con pétalos curvos animados, rotación individual, inclinación y desplazamiento en profundidad; no son imágenes estáticas. El juego incluye polvo de pasos y aterrizaje, banderas de recuperación y pausa/reanudación. Se probaron además las colisiones, la conservación de flores al reaparecer y los controles de pausa. La inspección visual en un dispositivo real sigue pendiente.
